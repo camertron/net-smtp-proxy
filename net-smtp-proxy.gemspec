@@ -1,5 +1,5 @@
 $LOAD_PATH.unshift File.join(File.dirname(__FILE__), 'lib')
-require 'net/smtp-proxy'
+require 'net/smtp-proxy/version'
 
 Gem::Specification.new do |s|
   s.name     = 'net-smtp-proxy'
