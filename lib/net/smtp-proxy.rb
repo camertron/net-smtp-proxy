@@ -3,6 +3,8 @@ require 'proxifier'
 
 module Net
   module SMTPProxy
+    autoload :DeliveryMethod, 'net/smtp-proxy/delivery_method'
+
     class Proxy < SMTP
       attr_reader :proxy_address, :proxy_port
 
