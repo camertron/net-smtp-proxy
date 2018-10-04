@@ -18,7 +18,7 @@ module Net
           settings[:proxy_address], settings[:proxy_port]
         ]
 
-        Net::SMTPProxy.new(*init_params).tap do |smtp|
+        Net::SMTPProxy::Proxy.new(*init_params).tap do |smtp|
           if settings[:tls] || settings[:ssl]
             if smtp.respond_to?(:enable_tls)
               smtp.enable_tls(ssl_context)
