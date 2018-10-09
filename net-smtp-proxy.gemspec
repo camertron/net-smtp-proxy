@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.email    = ['camertron@gmail.com']
   s.homepage = 'http://github.com/camertron'
 
-  s.description = s.summary = "Proxy support for Ruby's Net::SMTP."
+  s.description = s.summary = "Proxy support for Ruby's Net::SMTP library."
 
   s.platform = Gem::Platform::RUBY
   s.has_rdoc = true
